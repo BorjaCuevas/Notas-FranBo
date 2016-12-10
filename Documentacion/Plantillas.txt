@@ -1,0 +1,21 @@
+hay partes de la web que necesitan diferentes visualizaciones como puede ser el 
+boton "acceso" que cambiara a "cerrar sesion" si estas logeadopara ello 
+creamos un elemento de plantilla un placeholder que vamos a cambiar segun la 
+pantalla donde este.
+sustituimos el codigo HTML en nuestro caso el enlace y lo sustituimos por:
+{Nombre} ejemplo {seccion-enlaces}
+
+y nos llevamos el codigo html a un nuevo html.Llamado seccionn-enlaces.
+con el enlace iniciar sesion
+
+creamos otro llamado secccion-enlaces1.html donde ponemos la otra opcion en este caso
+la cerrar sesion .
+
+de forma que vamos cambiando nuestro html por placeholder{} y llevandonos ese
+codigo html a modulos que vamos llamando.
+
+Una vez hecho esto en el controlador tenemos que decidir que cosas vamos a cargar
+en un caso u otro en el data se guardan los datos o ficheros que vamos a utilizar 
+hay dos tipos de placeholder uno que seran ficheros y otros datos.De forma que tendremos
+dos tipos de datos contenedores uno para ficheros y otro para datos en nuestra clase Model.
+

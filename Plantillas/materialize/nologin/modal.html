@@ -1,0 +1,110 @@
+<!-- ventanas modales -->
+<!-- login -->
+<div id="vLogin" class="modal modal-fixed-footer">
+    <form action="" method="post">
+        <input type="hidden" name="ruta" value="login">
+        <input type="hidden" name="accion" value="dologin">
+        <div class="modal-content">
+            <h4>Iniciar sesión</h4>
+            <div class="input-field">
+                <i class="material-icons prefix">account_circle</i>
+                <input required id="email" type="email" name="email" class="validate">
+                <label for="email">Correo electrónico</label>
+            </div>
+            <div class="input-field">
+                <i class="material-icons prefix">lock</i>
+                <input required id="password" type="password" name="password" class="validate">
+                <label for="password">Clave de acceso</label>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Cerrar</a>
+            <input type="submit" class="modal-action waves-effect waves-green btn-flat" value="Iniciar sesión">
+        </div>
+    </form>
+</div>
+<!-- registro -->
+<div id="vRegistro" class="modal modal-fixed-footer">
+    <form>
+        <input type="hidden" name="ruta" value="usuario">
+        <input type="hidden" name="accion" value="doinsert">
+        <div class="modal-content">
+            <h4>Registro</h4>
+            <div class="input-field">
+                <i class="material-icons prefix">account_circle</i>
+                <input required id="email2" type="email" name="email" class="validate">
+                <label for="email2">Correo electrónico</label>
+            </div>
+            <div class="input-field">
+                <i class="material-icons prefix">lock</i>
+                <input required id="password3" type="password" name="password" class="validate">
+                <label for="password3">Clave de acceso</label>
+            </div>
+            <div class="input-field">
+                <i class="material-icons prefix">lock</i>
+                <input required id="password4" type="password" name="password2" class="validate">
+                <label for="password4">Repite la clave de acceso</label>
+            </div>
+            <input type='hidden' name='nombre' required placeholder='Introduzca su nombre' value="fran" /><br/>
+            <input type='hidden' name='apellido' required placeholder='Introduzca sus apellidos' value="delgado gomez" /><br/>
+            <input type='hidden' name='direccion' required placeholder='Introduzca su direccion' value="micasa" /><br/>
+            <input type='hidden' name='movil' required placeholder='Introduzca su movil' value="689160200"/><br/>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Cerrar</a>
+            <input type="submit" class="waves-effect waves-green btn-flat" value="Registrarse">
+        </div>
+    </form>
+</div>
+
+
+<div id="vEditar" class="modal modal-fixed-footer">
+    <form>
+        <input type="hidden" name="ruta" value="usuario">
+        <input type="hidden" name="accion" value="doedit">
+        <div class="modal-content">
+            <h4>Editar</h4>
+            <div class="input-field">
+                <i class="material-icons prefix">account_circle</i>
+                <input required id="nombre" type="text" name="nombre" class="validate">
+                <label for="nombre">Nombre:</label>
+            </div>
+            
+             <div class="input-field">
+                <i class="material-icons prefix">account_circle</i>
+                <input required id="apellido" type="text" name="apellido" class="validate">
+                <label for="apellido">Apellido:</label>
+            </div>
+            
+             <div class="input-field">
+                <i class="material-icons prefix">account_circle</i>
+                <input required id="direccion" type="text" name="direccion" class="validate">
+                <label for="direccion">Direccion:</label>
+            </div>
+            
+             <div class="input-field">
+                <i class="material-icons prefix">account_circle</i>
+                <input required id="movil" type="text" name="movil" class="validate">
+                <label for="movil">Movil:</label>
+            </div>
+            
+            <div class="input-field">
+                <i class="material-icons prefix">lock</i>
+                <input required id="password3" type="password" name="password" class="validate">
+                <label for="password3">Clave de acceso</label>
+            </div>
+            <div class="input-field">
+                <i class="material-icons prefix">lock</i>
+                <input required id="password4" type="password" name="password2" class="validate">
+                <label for="password4">Repite la clave de acceso</label>
+            </div>
+
+
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Cerrar</a>
+            <input type="submit" class="waves-effect waves-green btn-flat" value="Registrarse">
+        </div>
+    </form>
+</div>
+<!-- ventanas modales -->

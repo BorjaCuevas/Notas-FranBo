@@ -1,0 +1,5 @@
+1. Grupos
+2. Alarmas
+3. Busqueda por fechaCreacion
+4. Media con Listas
+5. fechaAlarma fecha creación nota (dependiente de tipo= alarma)

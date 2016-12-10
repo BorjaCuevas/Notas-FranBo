@@ -1,0 +1,54 @@
+<!-- Modificar clave usuario -->
+<div id="vPerfil" class="modal modal-fixed-footer">
+    <form>
+        <input type="hidden" name="ruta" value="usuario">
+        <input type="hidden" name="accion" value="doedit">
+        <div class="modal-content">
+            <h4>Perfil</h4>
+            <div class="input-field">
+                <i class="material-icons prefix">account_circle</i>
+                <input readonly id="email" value="{correo}" type="email" name="email" class="validate">
+                <label for="email2">Correo electrónico</label>
+            </div>
+            <div class="input-field">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="nombre" value="{nombre}" type="name" name="nombre" class="validate">
+                <label for="email2">Correo electrónico</label>
+            </div>
+            <div class="input-field">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="apellido" value="{apellido}" type="name" name="apellido" class="validate">
+                <label for="email2">Correo electrónico</label>
+            </div>
+            <div class="input-field">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="direccion" value="{direccion}" type="direccion" name="direccion" class="validate">
+                <label for="email2">Correo electrónico</label>
+            </div>
+            <div class="input-field">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="number" value="{movil}" type="number" name="movil" class="validate">
+                <label for="email2">Correo electrónico</label>
+            </div>
+            <div class="input-field">
+                <i class="material-icons prefix">lock</i>
+                <input required id="password" type="password" name="password" class="validate" placeholder="Contraseña anterior">
+                <label for="password3">Clave de acceso anterior</label>
+            </div>
+            <div class="input-field">
+                <i class="material-icons prefix">lock</i>
+                <input required id="password2" type="password" name="newpassword1" class="validate" placeholder="Contraseña nueva">
+                <label for="password3">Clave de acceso</label>
+            </div>
+            <div class="input-field">
+                <i class="material-icons prefix">lock</i>
+                <input required id="password3" type="password" name="newpassword2" class="validate" placeholder="Contraseña nueva">
+                <label for="password4">Repite la clave de acceso</label>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Cerrar</a>
+            <input type="submit" class="waves-effect waves-green btn-flat" value="Editar perfil">
+        </div>
+    </form>
+</div>

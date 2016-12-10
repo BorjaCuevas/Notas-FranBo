@@ -1,0 +1,18 @@
+<div id="vCrearNota" class="modal modal-fixed-footer">
+   
+    <form action="" method="post">
+        <input type="hidden" name="ruta" value="nota">
+        <input type="hidden" name="accion" value="doinsert">
+        <div class="modal-content">
+            <input type='hidden' name='ruta' value='nota' />
+            <input type='hidden' name='accion' value='doinsert' />
+            <input type='text' name='titulo' required placeholder='Titulo' value="" /><br/>
+            <textarea name="texto" id="cajaNota" rows="500" cols="80" placeholder="Escriba o arrastre contenido a su nota"></textarea>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Cerrar</a>
+            <input type="submit" class="modal-action waves-effect waves-green btn-flat" value="Crear Nota">
+        </div>
+    </form>
+    
+</div>

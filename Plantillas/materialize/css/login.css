@@ -1,0 +1,492 @@
+/* reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/*reset*/
+
+/*----------------------------------letras----------------------------------------------*/
+@font-face{
+    font-family:'droid';
+    src:url('DroidSans.ttf');
+}
+@font-face{
+    font-family:'mont';
+    src:url('Sans.ttf');
+}
+@font-face{
+    font-family:'arimo';
+    src:url('Arimo.ttf');
+}
+
+/*----------------------------------letras----------------------------------------------*/
+html, body{
+    height: 100%;
+    width: 100%;
+}
+header{
+    width:100%;
+    height:10%;
+}
+#contenido{
+    width: 80%;
+    height: 100%;
+    float: right;
+}
+.oculto{
+    visibility: hidden;
+}
+.mostrar{
+    visibility: visible;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-family: arimo;
+}
+/*-------------------------------------------NAV---------------------------------------*/
+/*Nav padre 100% su contenido es flex que es un form y un div con una foto*/
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #004050;
+    width:100%;
+    height:100%;
+}
+
+/*--------------Estilo para el formulario------------------*/
+nav label{
+    font-family:droid;
+    font-size:1.2em;
+    margin-left: 25%;
+    color: white;
+}
+nav input{
+    border:0px;
+    background-color:rgba(255,255,255,0.31);
+}
+input::-webkit-input-placeholder{
+    color:black;
+}
+nav select{
+    margin-left: 0.4%;
+    border:0px;
+    background-color:#FCFF92;
+}
+#menu{
+    display: flex;
+    left: 10%;
+    width: 90%
+}
+#menu input{
+    margin-left: 12%;
+}
+/*--------------Estilo para el formulario------------------*/
+
+
+/*--------------Estilo para el perfil----------------------*/
+#fotoPerfil img{
+    width:40px;
+    display: inline-block;
+}
+#fotoPerfil:hover{
+    cursor: pointer;
+}
+/*--------------Estilo para el perfil----------------------*/
+
+
+/*--------------Estilo para el Desplegable----------------------*/
+#desplegableDerecho{
+   width: 15%;
+   float: right;
+   
+       
+}
+#desplegablePerfil{
+    width: 100%;
+    background-color: grey;
+}
+#desplegablePerfil ol{
+    justify-content:space-around;
+    list-style: none;
+}
+#desplegablePerfil ol li{
+    text-align: center;
+    padding:6% 0% 6% 0%;
+    border-bottom:1px solid black;
+}
+/*--------------Estilo para el Desplegable-------------------------*/
+
+
+/*--------------Estilo para el MODAL Editar Usuario----------------------*/
+#editarPerfil{
+    width: 40%;
+    height: 50%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:33%;
+    left:33%;
+    background-color:rgba(255, 255, 0, 0.32);
+    border-radius: 2%;
+    
+}
+#editarPerfil form{
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+#editarPerfil input{
+    border:0px;
+    margin-top: 2%;
+    border-bottom: 1px solid grey;
+    width: 60%;
+    background-color:rgba(255, 255, 0, 0);
+}
+#editarPerfil #salirEditar{
+    bottom:3%;
+    right: 6%;
+    width: 8%;
+    border:0px;
+    border-bottom: 1px solid grey;
+    background-color:rgba(255, 255, 0, 0);
+    position: absolute;
+    cursor: pointer;
+}
+#editarPerfil span{
+    font-size: 1.6em;
+    font-family: mont;
+    position: absolute;
+    top: 10%;
+    
+}
+#editarPerfil input::-webkit-input-placeholder{
+   
+} 
+#editarPerfil #enviar{
+    width: 10%;
+    padding-top: 8%;
+    cursor: pointer;
+}
+/*--------------Estilo para el MODAL Editar Usuario----------------------*/
+
+/*--------------Estilo para el MODAL Crear Grupo-------------------------*/
+#crearGrupo{
+    width: 40%;
+    height: 50%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:33%;
+    left:33%;
+    background-color:rgba(255, 255, 0, 0.32);
+    border-radius: 2%;
+    
+}
+#crearGrupo form{
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+#crearGrupo input{
+    border:0px;
+    margin-top: 2%;
+    border-bottom: 1px solid grey;
+    width: 60%;
+    background-color:rgba(255, 255, 0, 0);
+}
+#crearGrupo .botonCrear{
+    width: 10%;
+    margin-top: 8%;
+    cursor: pointer;
+}
+#crearGrupo span{
+    font-size: 1.6em;
+    font-family: mont;
+    position: absolute;
+    top: 10%;
+    
+}
+#crearGrupo #salirGrupo{
+    bottom:3%;
+    right: 6%;
+    width: 8%;
+    border:0px;
+    border-bottom: 1px solid grey;
+    background-color:rgba(255, 255, 0, 0);
+    position: absolute;
+    cursor: pointer;
+}
+#titInvitarUsuario{
+      font-size: 1.6em;
+    font-family: mont;
+    padding-top: 40px;
+}
+#agregarUsuario{
+    border:0px;
+    top:3px;
+    font-size: 1.3em;
+    background-color:rgba(255, 255, 0, 0);
+    cursor: pointer;
+}
+/*--------------Estilo para el MODAL Crear Grupo-------------------------*/
+
+/*-------------------------------------------ASIDE---------------------------------------*/
+
+
+/*---------------------------------Grupos----------------------------------*/
+body #submenu {
+    background: rgba(7,0,0,0.41);
+    height: 100%;
+    width: 15%;
+    float: left;
+}
+#submenuGrupo{
+    width: 100%;
+    height: 80%;
+}
+/*---------------------------------ACORDEON------------------------------------*/
+/*http://thecodeplayer.com/walkthrough/vertical-accordion-menu-using-jquery-css3*/
+#accordian {
+	background: #004050;
+	width: 100%;
+    height: 100%;
+	color: white;
+    text-align: center;
+	/*Some cool shadow and glow effect*/
+	box-shadow: 
+		0 5px 15px 1px rgba(0, 0, 0, 0.6), 
+		0 0 200px 1px rgba(255, 255, 255, 0.5);
+}
+#accordian h3 {
+	font-size: 1.3em;
+	line-height: 34px;
+	padding: 0 10px;
+	cursor: pointer;
+    border-bottom: 1px solid black;
+	/*fallback for browsers not supporting gradients*/
+	background: rgb(227, 194, 54); 
+    color: black;
+
+}
+#accordian h3:hover{
+    border-right: 4px solid #004050;
+}
+#accordian h3:hover {
+	text-shadow: 0 0 1px rgba(255, 255, 255, 0.7);
+    background-color:rgb(170, 146, 44);
+    color: white;
+}
+/*-------------------BUSCAR-------------*/
+#formularioGrupo{
+  height: 25%;
+  width: 100%;
+  display: flex;
+  /* vertical center */
+  align-items: center;
+  /* horizontal center */
+  justify-content: center;
+  flex-direction:column;
+  flex-wrap: wrap;
+    
+}
+#suicidio{
+    display: flex;
+    align-content:flex-end;
+    margin-left: -10%;
+}
+#h2Buscar{
+    margin-top: -6%;
+    padding-bottom: 4%;
+}
+#h2Donde{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+#formularioGrupo label {
+    margin-left: 20px;  
+}
+/*--------------------BUSCAR-------------*/
+
+/*--------------------GRUPOS-------------*/
+#administrarGrupo{
+  height: 60%;
+  width: 100%;
+  display: flex;
+  /* vertical center */
+  align-items: center;
+  /* horizontal center */
+  justify-content: center;
+  flex-direction:column;
+  flex-wrap: wrap;
+    
+}
+#administrarGrupo ol{
+    margin-top: 10%;
+    width: 100%;
+    list-style: none;
+}
+#administrarGrupo ol li{
+    margin-top: 4px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    width: 100%;
+    background: rgb(227, 194, 54); 
+    cursor: pointer;
+    color: black;
+    
+}
+#accordian h2{
+ font-size: 1.2em; 
+}
+#h2Gestionar{
+    padding-bottom: 6%;
+    margin-top: -80%;
+}
+#administrarGrupo ol li:hover{
+    color: white;
+}
+/*--------------------GRUPOS-------------*/
+/*-----------------------------------------------CrearNota---------------------------------*/
+#crearNota{
+    border-radius: 3%;
+    width: 18%;
+    height: 25%;
+    background-color:rgb(227, 194, 54);
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    display: flex;
+    flex-direction: column;
+     justify-content: space-around;
+    align-items: center;
+}
+#crearNota img{
+    width: 25px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    cursor: pointer;
+}
+#mensajeCrearNota{
+     font-family:droid;
+     position: absolute;
+     font-size:1.2em;
+     left: 9%;
+     top:2%;
+}
+#tituloCrearNota{
+     text-align: center;
+
+     font-family:droid;
+     font-size:1em;
+}
+#multimediaCrearNota{
+     font-family:droid;
+     font-size:1em;
+     margin-top: -25%;
+}
+/*---------------------------------------------CrearNota----------------------------------*/
+
+/*---------------------------------------------Modal Nota----------------------------------*/
+#modalNota{
+    width: 40%;
+    height: 50%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    top:33%;
+    left:33%;
+    background-color:rgba(255, 255, 0, 0.32);
+    border-radius: 2%;
+    
+}
+#modalNota form{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#modalNota input{
+    border:0px;
+    margin-top: 2%;
+    border-bottom: 1px solid grey;
+    width: 60%;
+    background-color:rgba(255, 255, 0, 0);
+    text-align: center;
+}
+#modalNota .botonCrear{
+    width: 10%;
+    margin-top: 2%;
+    cursor: pointer;
+}
+#modalNota span{
+    font-size: 1.6em;
+    font-family: mont;
+    position: absolute;
+    top: 2%;
+    
+}
+#modalNota textarea{
+    resize: none;
+    width: 80%;
+    height: 60%;
+    margin-top:2%;
+    background-color:rgba(255, 255, 255, 0);
+}
+#modalNota #salirNota{
+    bottom:3%;
+    right: 6%;
+    width: 8%;
+    border:0px;
+    border-bottom: 1px solid grey;
+    background-color:rgba(255, 255, 0, 0);
+    position: absolute;
+    cursor: pointer;
+}
+/*---------------------------------------------Modal Nota----------------------------------*/
+
+/*---------------------------------------------Modal Invitado----------------------------------*/
+
+#modalInvitacion{
+    position: absolute;
+    top: 12%;
+    right: 1%;
+}
+
+.invitaciones{
+    float: right;
+    background-color: red;
+}
+
+
+/*---------------------------------------------Modal Invitado----------------------------------*/

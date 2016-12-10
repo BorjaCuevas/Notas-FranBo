@@ -1,0 +1,58 @@
+Usuario
+---------
+
+Correo (pk)
+Clave
+FechaAlta
+Tipo
+Estado
+Nombre
+Apellidos
+Dirección
+Móvil
+
+
+
+
+
+Grupo
+------
+
+Id (Pk)
+Nombre
+Tipo (Propio, Privado, Publico)
+
+
+GrupoUsuario
+-------------
+
+Id
+IdGrupo
+Correo
+Estado (Dado de alta, Pendiente de alta)
+Relación (Dueño, Miembro, Invitado)
+
+
+Nota
+-----
+
+Id (Pk)
+Titulo
+IdGrupo (FK)
+Texto
+Estado ('normal', 'alarma')
+FechaAlarma
+FechaCreacion
+Visible
+Tipo ('normal', 'media')
+
+
+Media
+------
+
+Id (Pk)
+IdNota (Fk)
+Tipo (se hace en el Model)
+Url
+Texto
+(Recordar comprobar peso según tipo, se hace en el Model)

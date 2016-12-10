@@ -1,0 +1,158 @@
+<!--<!DOCTYPE html>
+<html lang="es">-->
+    <!--<head>-->
+    <!--    <title></title>-->
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="Plantillas/materialize/css/nologin.css" />
+        <script src="jquery-3.1.1.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script type="text/javascript" src="Plantillas/materialize/js/nologinscript.js" defer></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <section class="primera">
+            <div id="post">
+                <div id="selector">
+                    <div class="selector selected"><h4>Iniciar sesión</h4></div>
+                    <div class="selector"><h4>Registro</h4></div>
+                </div>
+                <div class="vLogin log">
+                    <form action="index.php?ruta=login&accion=dologin" method="post">
+                        <div class="input-field">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input required id="email" name="email" type="email" placeholder="  Correo" class="validate">
+                        </div>
+                        <div class="input-field">
+                            <i class="material-icons prefix">lock</i>
+                            <input required id="password" name="password" type="password" placeholder="  Clave de acceso" class="validate">
+                        </div>
+                        <input class="submit" type="submit" value="Iniciar sesión">
+                    </form>
+                </div>
+                <div class="vRegistro log oculto">
+                    <form action="index.php?ruta=usuario&accion=doinsert" method="post">
+                        <div class="input-field">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input required id="email2" type="email" name="email" placeholder="  Correo electrónico" class="validate">
+                        </div>
+                        <div class="input-field">
+                            <i class="material-icons prefix">lock</i>
+                            <input required id="password3" type="password" name="password" placeholder="  Clave de acceso" class="validate">
+                        </div>
+                        <div class="input-field">
+                            <i class="material-icons prefix">lock</i>
+                            <input required id="password4" type="password" name="password2" placeholder="  Clave de acceso" class="validate">
+                        </div>
+                        <input type='hidden' name='nombre' required placeholder='Introduzca su nombre' value="fran" /><br/>
+                        <input type='hidden' name='apellido' required placeholder='Introduzca sus apellidos' value="delgado gomez" /><br/>
+                        <input type='hidden' name='direccion' required placeholder='Introduzca su direccion' value="micasa" /><br/>
+                        <input type='hidden' name='movil' required placeholder='Introduzca su movil' value="689160200"/><br/>
+                        <input class="submit" type="submit" value="Registrarse">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="segunda">
+            <div class="gris">
+                <div id="colores" class="colormovil">
+                    <a href="#personal"><div class="amarillo"></div></a>
+                    <a href="#familia"><div class="rojo"></div></a>
+                    <a href="#trabajo"><div class="azul"></div></a>
+                    <a href="#otros"><div class="verde"></div></a>
+                </div>
+                <div id="nombregrupos" class="nombregrupos nombremovil">
+                    <a href="#personal"><p class="Personal"> Personal </p></a>
+                    <a href="#familia"><p class="Casa"> Casa </p></a>
+                    <a href="#trabajo"><p class="Trabajo"> Trabajo </p></a>
+                    <a href="#otros"><p class="Otros"> Otros </p></a>
+                </div>
+            </div>
+            <div class="grupos"></div>
+            <div class="texto">
+                <div>
+                    <p> Personal </p>
+                    <p>Nadie tiene por qué enterarse, nadie tiene por qué leerte. 
+                    Guarda tus notas personales sin que nadie pueda verlas, y 
+                    accede a ellas en cualquier lado.</p>
+                </div>
+                <div>
+                    <p> Casa </p>
+                    <p>¿Quieres mantener en contacto con tu familia?
+                    No hace falta que los llames, no hace falta esperar respuesta. 
+                    ¡Déjales un recordatorio y olvidate!</p>
+                </div>
+                <div>
+                    <p> Trabajo </p>
+                    <p>Mejor que una agenda, mejor que un Post-It.
+                    Llevatelo contigo a cualqiuer lado, solo teniendo acceso a internet tendrás acceso a él.
+                    ¡Nunca te olvides, nunca lo pierdas!</p>
+                </div>
+                <div>
+                    <p> Otros </p>
+                    <p>Crea tus propios grupos y mantente en contacto con quien quieras, donde y cuando quieras.
+                    Solo hace falta el querer y ¡hacerlo!.</p>
+                </div>
+            </div>
+            <div class="postit">
+                <p> ¡Bienvenido a Notas FranBo! </p>
+                <p> Tan increíble que no creeras que sea gratuito. </p>
+            </div>
+        </section>
+        <section class="resto">
+            <div id="personal" class="personal">
+                <div class="logo">
+                    <p> Personal </p>
+                    <p> Tu contenido privado </p>
+                </div>
+                <p>Tu agenda personal, a la que solo tu tendrás acceso.</p>
+                <div class="foto"></div>
+                <div class="postit"></div>
+                
+            </div>
+            <div id="familia" class="familia">
+                <div class="logo">
+                    <p> Casa </p>
+                    <p> Siempre conectado con tu familia. </p>
+                </div>
+                <p>Tu solo tienes que disfrutar de tu familia, nosotros nos ocuparemos de que no se te olvide nada.</p>
+                <div class="foto"></div>
+                <div class="postit"></div>
+                <p> Lista de la compra </p>
+                <p>-  Arroz<br>
+                -  Yogurt<br>
+                -  Galletas<br>
+                -  Leche<br>
+                -  Huevos<br>
+                - Pant<br>
+                -  Suavizante </p>
+            </div>
+            <div id="trabajo" class="trabajo">
+                <div class="logo">
+                    <p> Trabajo </p>
+                    <p> Nunca nada se te olvidará. </p>
+                </div>
+                <p>Tu solo tienes que disfrutar de tu familia, nosotros nos ocuparemos de que no se te olvide nada.</p>
+                <div class="foto"></div>
+                <div class="postit"></div>
+                <p> Reunión con Martin </p>
+                <p>Día: 03/12/2016<br>
+                Hora: 9:45<br>
+            </div>
+            <div id="otros" class="otros">
+                <div class="logo">
+                    <p> Otros </p>
+                    <p> Con quien tu quieras </p>
+                </div>
+                <p>Tu solo tienes que disfrutar de tu familia, nosotros nos ocuparemos de que no se te olvide nada.</p>
+                <div class="foto"></div>
+                <div class="postit"></div>
+                <p> Reunión con Martin </p>
+                <p>Día: 03/12/2016<br>
+                Hora: 9:45<br>
+            </div>
+        </section>
+    </body>
+    <footer>
+        
+    </footer>
+<!--</html>-->
